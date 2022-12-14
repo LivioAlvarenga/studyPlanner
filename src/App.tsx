@@ -1,3 +1,11 @@
+import Form from "./components/Form";
+import Lista from "./components/Lista";
+
 export function App() {
-  return <h1 className="text-6xl">Study Planner</h1>;
+  return (
+    <div>
+      <Form />
+      <Lista />
+    </div>
+  );
 }

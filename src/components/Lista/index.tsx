@@ -1,7 +1,7 @@
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 import Item from "./Item";
 
-export default function Lista() {
+export default function List() {
   const tarefas = [
     {
       tarefa: "React",

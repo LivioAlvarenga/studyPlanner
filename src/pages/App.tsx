@@ -1,5 +1,6 @@
 import Form from "../components/Form";
-import Lista from "../components/Lista";
+import List from "../components/Lista";
+import Timer from "../components/Timer";
 
 export function App() {
   return (
@@ -9,8 +10,9 @@ export function App() {
       </h1>
       <div className="grid grid-cols-1 items-center justify-center gap-8 lg:grid-cols-2">
         <Form />
-        <Lista />
+        <List />
       </div>
+      <Timer />
     </div>
   );
 }

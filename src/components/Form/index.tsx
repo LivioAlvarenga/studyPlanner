@@ -33,7 +33,6 @@ class Form extends React.Component {
           />
         </div>
         <Button>Adicionar</Button>
-        <img src="" alt="" />
       </form>
     );
   }

@@ -86,6 +86,9 @@ npm create vite@latest studyPlanner -- --template react-ts
 cd studyPlanner
 npm install
 
+# Instalando faker
+npm install --save-dev @faker-js/faker
+
 # Instalando arquitetura Tailwindcss
 npm install -D tailwindcss postcss autoprefixer prettier prettier-plugin-tailwindcss
 

@@ -15,7 +15,7 @@ class Form extends React.Component<{
     event.preventDefault();
     this.props.setTarefas((tarefasAntigas) => [
       ...tarefasAntigas,
-      { ...this.state, select: false, full: false, id: faker.datatype.uuid() },
+      { ...this.state, selected: false, full: false, id: faker.datatype.uuid() },
     ]);
     this.setState({
       tarefa: "",

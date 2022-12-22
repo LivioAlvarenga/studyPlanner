@@ -1,3 +1,4 @@
+import { faker } from "@faker-js/faker";
 import React from "react";
 import { ITarefa } from "../../types/tarefa";
 import Button from "../Button";
@@ -12,7 +13,14 @@ class Form extends React.Component<{
 
   addTask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    this.props.setTarefas((tarefasAntigas) => [...tarefasAntigas, { ...this.state }]);
+    this.props.setTarefas((tarefasAntigas) => [
+      ...tarefasAntigas,
+      { ...this.state, select: false, full: false, id: faker.datatype.uuid() },
+    ]);
+    this.setState({
+      tarefa: "",
+      tempo: "00:00:00",
+    });
   }
 
   render(): React.ReactNode {

@@ -18,6 +18,24 @@ export function App() {
     );
   }
 
+  function endTask() {
+    if (selected) {
+      setSelected(undefined);
+      setTarefas((tarefasAnteriores) =>
+        tarefasAnteriores.map((tarefa) => {
+          if (tarefa.id === selected.id) {
+            return {
+              ...tarefa,
+              selected: false,
+              done: true,
+            };
+          }
+          return tarefa;
+        })
+      );
+    }
+  }
+
   return (
     <div className="flex  w-full flex-col items-center gap-8 overflow-hidden rounded-xl bg-neutral-900 px-3 pt-20 pb-32 lg:p-16">
       <h1 className="mb-12 bg-gradient-to-r from-yellow-300 to-cyan-400 bg-clip-text text-center text-6xl text-transparent lg:text-7xl ">
@@ -27,7 +45,7 @@ export function App() {
         <Form setTarefas={setTarefas} />
         <List tarefas={tarefas} selectTask={selectTask} />
       </div>
-      <Timer selected={selected} />
+      <Timer selected={selected} endTask={endTask}/>
     </div>
   );
 }

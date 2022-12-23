@@ -6,9 +6,10 @@ import Clock from "./Clock";
 
 interface Props {
   selected: ITarefa | undefined;
+  endTask: () => void;
 }
 
-export default function Timer({ selected }: Props) {
+export default function Timer({ selected, endTask }: Props) {
   const [time, setTime] = useState<number>();
 
   useEffect(() => {
@@ -17,11 +18,23 @@ export default function Timer({ selected }: Props) {
     }
   }, [selected]);
 
+  function startCounter(counter: number = 0) {
+    setTimeout(() => {
+      if (counter > 0) {
+        setTime(counter - 1);
+        return startCounter(counter - 1);
+      }
+      endTask();
+    }, 1000);
+  }
+
   return (
     <div className="flex flex-col items-center justify-center gap-5">
       <p className="text-center text-4xl">Escolha um card e inicie o cronometro</p>
-      <Clock time={time}/>
-      <Button hover="hover:bg-red-600">Começar!</Button>
+      <Clock time={time} />
+      <Button hover="hover:bg-red-600" onClick={() => startCounter(time)}>
+        Começar!
+      </Button>
     </div>
   );
 }

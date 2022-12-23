@@ -5,3 +5,12 @@ export function timeToSecond(time: string) {
   const minuteInSecond = Number(minute) * 60;
   return hourInSecond + minuteInSecond + Number(second);
 }
+
+export function secondToHourMinuteSecond(second: number) {
+  if (second) {
+    const result = new Date(second * 1000).toISOString().slice(11, 19)
+    
+    return result;
+  }
+  return "00:00:00";
+}

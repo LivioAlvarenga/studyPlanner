@@ -27,7 +27,7 @@ export function App() {
         <Form setTarefas={setTarefas} />
         <List tarefas={tarefas} selectTask={selectTask} />
       </div>
-      <Timer />
+      <Timer selected={selected} />
     </div>
   );
 }

@@ -10,6 +10,12 @@ export function App() {
 
   function selectTask(selectedTask: ITarefa) {
     setSelected(selectedTask);
+    setTarefas((tarefasAnteriores) =>
+      tarefasAnteriores.map((tarefa) => ({
+        ...tarefa,
+        selected: tarefa.id === selectedTask.id ? true : false,
+      }))
+    );
   }
 
   return (

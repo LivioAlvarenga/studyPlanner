@@ -1,4 +1,4 @@
-import { secondToHourMinuteSecond } from "../../common/utils/time";
+import { secondToHourMinuteSecond } from "../../../common/utils/time";
 
 interface Props {
   time: number | undefined;

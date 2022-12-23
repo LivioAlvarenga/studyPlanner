@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { timeToSecond } from "../../common/utils/time";
 import { ITarefa } from "../../types/tarefa";
 import Button from "../Button";
-import { timeToSecond } from "../common/utils/time";
 import Clock from "./Clock";
 
 interface Props {

@@ -49,7 +49,7 @@ Utilizei o TailwindCss para abstrair o CSS.
 | --------------------- | -------------------------------------------------------------------------------------- |
 | :sparkles: Nome       | **Desenvolvendo um Planejador de Estudos com React, TypeScript, ViteJs e TailwindCss** |
 | :label: Tecnologias   | React, TypeScript, TailwindCSS, ViteJs, NodeJs, JavaScript, HTML5, CSS3, Prettier      |
-| :rocket: URL          | https://studyPlanner-livio-alvarenga.vercel.app/                                       |
+| :rocket: URL          | https://study-planner-livio-alvarenga.vercel.app/                                       |
 
 ---
 

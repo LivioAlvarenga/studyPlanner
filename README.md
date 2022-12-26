@@ -13,16 +13,20 @@
 
 &nbsp;
 
-![Study Planner](https://github.com/LivioAlvarenga/study-planner/blob/master/files/capa.png?raw=true#vitrinedev)
+![Study Planner](https://github.com/LivioAlvarenga/studyPlanner/blob/master/files/capa.gif?raw=true#vitrinedev)
 
 &nbsp;
 <a id="-sobre-o-projeto"></a>
 
 ## 💻 Sobre o projeto
 
-🚀
+🚀 É um  planejador de estudos desenvolvido em ViteJs, TypeScript, React e TailwindCSS. 
 
-> **Em construção...**
+Usei o ViteJs para iniciar o projeto React com TypeScript.
+
+Usei todos os principais conceitos de ReactJs para desenvolver esta aplicação como: Componentização, Renderização dinâmica, Props, useState, useEffect.
+
+Utilizei o TailwindCss para abstrair o CSS. 
 
 <p align="center">
   <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/studyPlanner?color=ff0000"></a>
@@ -125,7 +129,14 @@ npm run dev
 
 ## ⚙️ Funcionalidades
 
-> **Em construção...**
+* Input para adicionar Tarefa;
+* Input para adicionar Tempo;
+* Lista dinâmica de tarefas e tempo;
+* Seleção de tarefas e adição de tempo em cronometro;
+* Start de cronometro e identificação de concluído em lista de tarefas;
+* Estilização moderna com conceitos avançados de CSS.
+
+&nbsp;
 
 ### 🧭 Rodando a aplicação web (Modo desenvolvimento)
 

@@ -20,13 +20,13 @@
 
 ## 💻 Sobre o projeto
 
-🚀 É um  planejador de estudos desenvolvido em ViteJs, TypeScript, React e TailwindCSS. 
+🚀 É um planejador de estudos desenvolvido em ViteJs, TypeScript, React e TailwindCSS.
 
 Usei o ViteJs para iniciar o projeto React com TypeScript.
 
-Usei todos os principais conceitos de ReactJs para desenvolver esta aplicação como: Componentização, Renderização dinâmica, Props, useState, useEffect.
+Usei todos os principais conceitos de ReactJs para desenvolver esta aplicação como: Componentização, Renderização dinâmica, Props, Hooks (useState e useEffect).
 
-Utilizei o TailwindCss para abstrair o CSS. 
+Utilizei o TailwindCss para abstrair o CSS.
 
 <p align="center">
   <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/studyPlanner?color=ff0000"></a>
@@ -49,7 +49,7 @@ Utilizei o TailwindCss para abstrair o CSS.
 | --------------------- | -------------------------------------------------------------------------------------- |
 | :sparkles: Nome       | **Desenvolvendo um Planejador de Estudos com React, TypeScript, ViteJs e TailwindCss** |
 | :label: Tecnologias   | React, TypeScript, TailwindCSS, ViteJs, NodeJs, JavaScript, HTML5, CSS3, Prettier      |
-| :rocket: URL          | https://study-planner-livio-alvarenga.vercel.app/                                       |
+| :rocket: URL          | https://study-planner-livio-alvarenga.vercel.app/                                      |
 
 ---
 
@@ -129,12 +129,12 @@ npm run dev
 
 ## ⚙️ Funcionalidades
 
-* Input para adicionar Tarefa;
-* Input para adicionar Tempo;
-* Lista dinâmica de tarefas e tempo;
-* Seleção de tarefas e adição de tempo em cronometro;
-* Start de cronometro e identificação de concluído em lista de tarefas;
-* Estilização moderna com conceitos avançados de CSS.
+- Input para adicionar Tarefa;
+- Input para adicionar Tempo;
+- Lista dinâmica de tarefas e tempo;
+- Seleção de tarefas e adição de tempo em cronometro;
+- Start de cronometro e identificação de concluído em lista de tarefas;
+- Estilização moderna com conceitos avançados de CSS.
 
 &nbsp;
 
